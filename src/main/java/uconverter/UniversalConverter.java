@@ -3,18 +3,19 @@ package uconverter;
 import asg.cliche.Command;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by JavaCourses on 19.04.2017..
  */
 public class UniversalConverter {
 
-    private List<UnitConverter> converters = Arrays.asList(
-        new CelsiusUnitConverter(),
-        new FahrenheitUnitConverter(),
-        new KelvinUnitConverter()
+    private final List<UnitConverter> converters = Arrays.asList(
+            new CelsiusUnitConverter(),
+            new FahrenheitUnitConverter(),
+            new KelvinUnitConverter(),
+            new MeterUnitConverter()
     );
 
     private UnitConverter sourceConverter;
@@ -27,23 +28,21 @@ public class UniversalConverter {
             System.out.printf("%d - %s\n", i + 1, converters.get(i));
         }
     }
-    /* How cliche shows commands?*/
+
     @Command
-    public void source (int idx) {
+    public void source(int idx) {
         sourceConverter = converters.get(idx - 1);
     }
 
-    //testtest
     @Command
-    public void target (int idx) {
-        targetConverter = converters.get(idx -1);
+    public void target(int idx) {
+        targetConverter = converters.get(idx - 1);
     }
 
     @Command
-    public double convert (double value) {
+    public double convert(double value) {
         double siValue = sourceConverter.toSI(value);
-        double targetValue = targetConverter.fromSI(siValue);
-        return targetValue;
+        return targetConverter.fromSI(siValue);
     }
 
 }

@@ -6,7 +6,7 @@ package uconverter;
 public class FahrenheitUnitConverter extends UnitConverter {
     @Override
     public double toSI(double value) {
-        return ((value + 459.67) * (5.0 / 9.0) );
+        return ((value + 459.67) * (5.0 / 9.0));
     }
 
     @Override
@@ -15,7 +15,7 @@ public class FahrenheitUnitConverter extends UnitConverter {
     }
 
     @Override
-    public String getName() {
+    public String getMeasure() {
         return "Fahrenheit";
     }
 }

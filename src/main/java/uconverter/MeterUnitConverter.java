@@ -1,10 +1,9 @@
 package uconverter;
 
 /**
- * Created by JavaCourses on 19.04.2017..
+ * Created by Vadims on 22-Apr-17.
  */
-public class KelvinUnitConverter extends UnitConverter {
-
+public class MeterUnitConverter extends UnitConverter {
 
     @Override
     public double toSI(double value) {
@@ -18,6 +17,7 @@ public class KelvinUnitConverter extends UnitConverter {
 
     @Override
     public String getMeasure() {
-        return "Kelvin";
+        return "Meters";
     }
 }
+
