@@ -15,7 +15,24 @@ public class UniversalConverter {
             new FahrenheitUnitConverter(),
             new KelvinUnitConverter(),
             new mUnitConverter(),
-            new kmUnitConverter()
+            new kmUnitConverter(),
+            new cmUnitConverter(),
+            new mmUnitConverter(),
+            new inchUnitConverter(),
+            new footUnitConverter(),
+            new yardUnitConverter(),
+            new mileUnitConverter(),
+            new kgUnitConverter(),
+            new gramUnitConverter(),
+            new tonUnitConverter(),
+            new ounceUnitConverter(),
+            new poundUnitConverter(),
+            new litreUnitConverter(),
+            new gallonUnitConverter(),
+            new m_sUnitConverter(),
+            new km_hUnitConverter(),
+            new foot_sUnitConverter(),
+            new mile_hUnitConverter()
     );
 
     private UnitConverter sourceConverter;
