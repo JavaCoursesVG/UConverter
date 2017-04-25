@@ -15,7 +15,8 @@ public class UniversalConverter {
             new CelsiusUnitConverter(),
             new FahrenheitUnitConverter(),
             new KelvinUnitConverter(),
-            new MeterUnitConverter()
+            new MeterUnitConverter(),
+            new KilometerConverter()
     );
 
     private UnitConverter sourceConverter;
