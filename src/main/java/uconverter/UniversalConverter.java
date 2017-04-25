@@ -4,7 +4,6 @@ import asg.cliche.Command;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by JavaCourses on 19.04.2017..
@@ -15,8 +14,8 @@ public class UniversalConverter {
             new CelsiusUnitConverter(),
             new FahrenheitUnitConverter(),
             new KelvinUnitConverter(),
-            new MeterUnitConverter(),
-            new KilometerConverter()
+            new mUnitConverter(),
+            new kmUnitConverter()
     );
 
     private UnitConverter sourceConverter;

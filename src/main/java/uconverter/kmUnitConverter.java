@@ -1,23 +1,23 @@
 package uconverter;
 
 /**
- * Created by Vadims on 22-Apr-17.
+ * Created by mebo on 25.04.2017..
  */
-public class MeterUnitConverter extends UnitConverter {
+public class kmUnitConverter extends UnitConverter {
 
     @Override
     public double toSI(double value) {
-        return value;
+        return value * 1000;
     }
 
     @Override
     public double fromSI(double siValue) {
-        return siValue;
+        return siValue / 1000;
     }
 
     @Override
     public String getMeasure() {
-        return "Meters";
+        return "Kilometers";
     }
-}
 
+}
