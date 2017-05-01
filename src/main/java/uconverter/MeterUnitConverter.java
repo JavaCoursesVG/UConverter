@@ -1,23 +1,23 @@
 package uconverter;
 
 /**
- * Created by Vadims on 25-Apr-17.
+ * Created by Vadims on 22-Apr-17.
  */
-public class foot_sUnitConverter extends UnitConverter {
+public class MeterUnitConverter extends UnitConverter {
 
     @Override
     public double toSI(double value) {
-        return value * 0.3048;
+        return value;
     }
 
     @Override
     public double fromSI(double siValue) {
-        return siValue / 0.3048;
+        return siValue;
     }
 
     @Override
     public String getMeasure() {
-        return "foot/s";
+        return "Meters";
     }
-
 }
+

@@ -3,7 +3,7 @@ package uconverter;
 /**
  * Created by Vadims on 25-Apr-17.
  */
-public class gallonUnitConverter extends UnitConverter {
+public class GallonUnitConverter extends UnitConverter {
 
     @Override
     public double toSI(double value) {

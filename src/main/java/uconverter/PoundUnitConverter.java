@@ -3,21 +3,22 @@ package uconverter;
 /**
  * Created by Vadims on 25-Apr-17.
  */
-public class litreUnitConverter extends UnitConverter{
+public class PoundUnitConverter extends UnitConverter {
 
     @Override
     public double toSI(double value) {
-        return value;
+        return value / 2.2026;
     }
 
     @Override
     public double fromSI(double siValue) {
-        return siValue;
+        return siValue * 2.2026;
     }
 
     @Override
     public String getMeasure() {
-        return "litre";
+        return "pound";
     }
+
 
 }

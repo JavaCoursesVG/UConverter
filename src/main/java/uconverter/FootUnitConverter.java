@@ -1,23 +1,23 @@
 package uconverter;
 
 /**
- * Created by mebo on 25.04.2017..
+ * Created by Vadims on 25-Apr-17.
  */
-public class kmUnitConverter extends UnitConverter {
+public class FootUnitConverter extends UnitConverter {
 
     @Override
     public double toSI(double value) {
-        return value * 1000;
+        return value / 3.2786;
     }
 
     @Override
     public double fromSI(double siValue) {
-        return siValue / 1000;
+        return siValue * 3.2786;
     }
 
     @Override
     public String getMeasure() {
-        return "Kilometers";
+        return "foot";
     }
 
 }

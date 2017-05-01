@@ -1,23 +1,23 @@
 package uconverter;
 
 /**
- * Created by Vadims on 22-Apr-17.
+ * Created by Vadims on 25-Apr-17.
  */
-public class mUnitConverter extends UnitConverter {
+public class KilometerInHourUnitConverter extends UnitConverter {
 
     @Override
     public double toSI(double value) {
-        return value;
+        return value * 0.277778;
     }
 
     @Override
     public double fromSI(double siValue) {
-        return siValue;
+        return siValue / 0.277778;
     }
 
     @Override
     public String getMeasure() {
-        return "Meters";
+        return "K/h";
     }
-}
 
+}

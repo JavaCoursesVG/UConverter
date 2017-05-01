@@ -3,21 +3,21 @@ package uconverter;
 /**
  * Created by Vadims on 25-Apr-17.
  */
-public class gramUnitConverter extends UnitConverter {
+public class CentimeterUnitConverter extends UnitConverter {
 
     @Override
     public double toSI(double value) {
-        return value / 1000;
+        return value / 100;
     }
 
     @Override
     public double fromSI(double siValue) {
-        return siValue * 1000;
+        return siValue * 100;
     }
 
     @Override
     public String getMeasure() {
-        return "gram";
+        return "cm";
     }
 
 }

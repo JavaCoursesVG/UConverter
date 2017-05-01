@@ -3,21 +3,21 @@ package uconverter;
 /**
  * Created by Vadims on 25-Apr-17.
  */
-public class mile_hUnitConverter extends UnitConverter {
+public class InchUnitConverter extends UnitConverter {
 
     @Override
     public double toSI(double value) {
-        return value * 0.44704;
+        return value / 39.37;
     }
 
     @Override
     public double fromSI(double siValue) {
-        return siValue / 0.44704;
+        return siValue * 39.37;
     }
 
     @Override
     public String getMeasure() {
-        return "mile/h";
+        return "inch";
     }
 
 }

@@ -3,21 +3,21 @@ package uconverter;
 /**
  * Created by Vadims on 25-Apr-17.
  */
-public class inchUnitConverter extends UnitConverter {
+public class TonUnitConverter extends UnitConverter {
 
     @Override
     public double toSI(double value) {
-        return value / 39.37;
+        return value * 1000 ;
     }
 
     @Override
     public double fromSI(double siValue) {
-        return siValue * 39.37;
+        return siValue / 1000;
     }
 
     @Override
     public String getMeasure() {
-        return "inch";
+        return "ton";
     }
 
 }
