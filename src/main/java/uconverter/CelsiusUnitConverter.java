@@ -1,7 +1,7 @@
 package uconverter;
 
 /**
- * Created by JavaCourses on 19.04.2017..
+ * Created by JavaCourses on 19.04.2017..m
  */
 public class CelsiusUnitConverter extends UnitConverter {
 
