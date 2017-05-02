@@ -3,7 +3,7 @@ package uconverter;
 /**
  * Created by Vadims on 25-Apr-17.
  */
-public class LitreUnitConverter extends UnitConverter{
+public class LiterUnitConverter extends UnitConverter{
 
     @Override
     public double toSI(double value) {

@@ -27,7 +27,7 @@ public class UniversalConverter {
             new TonUnitConverter(),
             new OunceUnitConverter(),
             new PoundUnitConverter(),
-            new LitreUnitConverter(),
+            new LiterUnitConverter(),
             new GallonUnitConverter(),
             new MeterInSecondUnitConverter(),
             new KilometerInHourUnitConverter(),
