@@ -17,11 +17,12 @@ import static org.junit.Assert.*;
 @RunWith(Parameterized.class)
 public class CelsiusUnitConverterTest {
 
+    private CelsiusUnitConverter converter = new CelsiusUnitConverter();
     @Parameterized.Parameter(0)
     public double srcCelsius;
     @Parameterized.Parameter(1)
     public double trgCelsius;
-    CelsiusUnitConverter converter = new CelsiusUnitConverter();
+
 
     @Parameterized.Parameters
     public static Collection<Object> data() {
