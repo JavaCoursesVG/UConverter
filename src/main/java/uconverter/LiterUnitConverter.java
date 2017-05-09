@@ -17,7 +17,7 @@ public class LiterUnitConverter extends UnitConverter{
 
     @Override
     public String getMeasure() {
-        return "litre";
+        return "Liter";
     }
 
 }
